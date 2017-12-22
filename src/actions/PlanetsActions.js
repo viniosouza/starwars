@@ -15,7 +15,7 @@ export const planetsList = () => dispatch =>
     .get(`${Endpoint.ENDPOINT_URL}/planets`, config)
     .then(response =>
       dispatch({
-        type: PLANETS,
+        type: 'PLANETS',
         payload: response.data
       })
     )
