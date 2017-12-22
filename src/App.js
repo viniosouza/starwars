@@ -1,16 +1,29 @@
 import React, { Component } from "react";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import reducers from "./reducers";
+import { composeWithDevTools } from "redux-devtools-extension/logOnlyInProduction";
+
+const componseEnhancers = composeWithDevTools({});
+
+const store = createStore(
+  reducers,
+  /* preloadedState, */ componseEnhancers(applyMiddleware(thunk))
+);
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Provider store={store}>
+        <Router>
+          <div className="App">
+            <Route path="/" exact component={Home} />
+          </div>
+        </Router>
+      </Provider>
     );
   }
 }

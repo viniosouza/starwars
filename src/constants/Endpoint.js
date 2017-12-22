@@ -1,0 +1,1 @@
+export const ENDPOINT_URL = 'https://swapi.co/api';

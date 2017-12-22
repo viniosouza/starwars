@@ -3,9 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.17.1",
+    "node-sass": "^4.7.2",
+    "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "1.0.17",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+
+    "redux-thunk": "^2.2.0",
+    "sass": "^1.0.0-beta.4",
+    "sass-loader": "^6.0.6",
+    "webpack-plugin-manifest": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -14,7 +27,11 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "babel-install": "2.1.0",
+    "gulp-sass": "^3.1.0",
+    "husky": "^0.14.3",
     "webpack": "^3.10.0",
+    "webpack-bundle-analyzer": "^2.9.1",
     "webpack-dev-server": "^2.9.7"
   }
 }
