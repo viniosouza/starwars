@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
@@ -20,6 +21,7 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <Route path="/" exact component={Home} />
+          <Navbar />
         </Router>
       </Provider>
     );

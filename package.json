@@ -43,7 +43,6 @@
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-thunk": "^2.2.0",
-    "sass": "^1.0.0-beta.4",
     "sass-loader": "^6.0.6",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
@@ -61,7 +60,6 @@
   },
   "devDependencies": {
     "babel-install": "2.1.0",
-    "gulp-sass": "^3.1.0",
     "husky": "^0.14.3",
     "webpack": "^3.10.0",
     "webpack-bundle-analyzer": "^2.9.1",

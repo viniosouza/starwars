@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+
+    &-list{
+     float: none;
+     list-style: none   
+    }
+}
+
