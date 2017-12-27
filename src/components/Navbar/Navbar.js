@@ -1,15 +1,24 @@
 import React, { Component } from "react";
-import './styles/Navbar.scss';
-
+import { Link } from "react-router-dom";
+import "./styles/Navbar.scss";
+import Logo from "../Logo/LogoStar";
 class Navbar extends Component {
   render() {
     return (
-      <div className="Navbar">
+      <nav className="Navbar">
+        {/* <Logo /> */}
         <ul className="Navbar-list">
-          <li>Characteres</li>
-          <li>Planets</li>
+          <Link to="">
+            <li>Home</li>
+          </Link>
+          <Link to="/people">
+            <li>Characteres</li>
+          </Link>
+          <Link to="/planets">
+            <li>Planets</li>
+          </Link>
         </ul>
-      </div>
+      </nav>
     );
   }
 }

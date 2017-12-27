@@ -1,7 +1,8 @@
 import { PLANETS, PLANETS_FAILED } from "../constants/ActionTypes";
 
 const initialState = {
-  error: false
+  error: false,
+  results: []
 };
 
 export default function planetsReducer(state = initialState, action) {
@@ -9,7 +10,8 @@ export default function planetsReducer(state = initialState, action) {
     case PLANETS:
       return {
         ...state,
-        data: action.payload
+        data: action.payload,
+        results: action.payload.results
       };
     case PLANETS_FAILED:
       return {

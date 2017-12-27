@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import PlanetsContainer from "./containers/PlanetsContainer";
+import PeopleContainer from "./containers/PeopleContainer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
@@ -20,8 +22,12 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <Route path="/" exact component={Home} />
-          <Navbar />
+          <div className="App">
+            <Navbar />
+            <Route path="/" exact component={Home} />
+            <Route path="/planets" exact component={PlanetsContainer} />
+            <Route path="/people" exact component={PeopleContainer} />
+          </div>
         </Router>
       </Provider>
     );

@@ -1,9 +1,13 @@
 body {
-  background: url(../../../img/starwars1.jpg) 0 0 repeat #000;
+  margin: 0;
+  padding: 0;
+}
+.Home {
+  background: url(../../../img/starwars-home.jpg) 0 0 repeat #000;
   background-size: 100%;
-  min-height: 90vh;
   padding: 10px;
+  height: 400px;
+  width: 100%;
   background-repeat: no-repeat;
 
-  
 }

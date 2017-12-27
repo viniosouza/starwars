@@ -1,6 +1,7 @@
 import { PEOPLE, PEOPLE_FAILED } from "../constants/ActionTypes";
 const initialState = {
-  error: false
+  error: false,
+  results: []
 };
 
 export default function peopleReducer(state = initialState, action) {
@@ -8,7 +9,8 @@ export default function peopleReducer(state = initialState, action) {
     case PEOPLE:
       return {
         ...state,
-        data: action.payload
+        data: action.payload,
+        results: action.payload.results
       };
     case PEOPLE_FAILED:
       return {
