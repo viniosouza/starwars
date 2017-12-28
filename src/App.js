@@ -8,7 +8,8 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import reducers from "./reducers";
-import 'antd/dist/antd.css';
+import { PlanetsProfile } from "./components/Planets";
+import "antd/dist/antd.css";
 import { composeWithDevTools } from "redux-devtools-extension/logOnlyInProduction";
 
 const componseEnhancers = composeWithDevTools({});
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/planets" exact component={PlanetsContainer} />
             <Route path="/people" exact component={PeopleContainer} />
+            <Route path="/planets/:planet" exact component={PlanetsProfile} />
           </div>
         </Router>
       </Provider>

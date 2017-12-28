@@ -64,7 +64,6 @@
   display: none;
 
   &-img {
-  
     width: 200px;
     border-radius: 1px 1px 0 0;
     object-fit: cover;
@@ -93,3 +92,7 @@
   display: block;
 }
 
+.modal-body {
+  text-align: center;
+  word-wrap: break-word;
+}

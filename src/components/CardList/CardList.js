@@ -30,14 +30,9 @@ class CardList extends Component {
         {/* Modal */}
         <div className={containerClass}>
           <div className="modal-header">
-            <img
-              className="modal-cover-img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2000px-Star_Wars_Logo.svg.png"
-              alt="starwars"
-            />
           </div>
           <div className="modal-body">
-            <p>{this.props.name}</p>
+            <h1>{this.props.name}</h1>
             <p>
               {this.props.population
                 ? this.props.population

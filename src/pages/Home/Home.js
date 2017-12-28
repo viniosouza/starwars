@@ -22,9 +22,15 @@ class Home extends PureComponent {
         <div className="Home-container">
           <audio
             autoplay
+            hidden
             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/244725/MainTitle.ogg"
           >
-            O seu navegador não suporta o elemento <code>audio</code>.
+            <source
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/244725/MainTitle.ogg"
+              type="audio/mpeg"
+            />
+            If you're reading this, audio isn't supported. O seu navegador não
+            suporta o elemento <code>audio</code>.
           </audio>
         </div>
       </section>
