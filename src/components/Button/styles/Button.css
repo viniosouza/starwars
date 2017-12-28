@@ -1,0 +1,9 @@
+.Button {
+  background: none;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+}
+.plus-img {
+  height: 60px;
+}
