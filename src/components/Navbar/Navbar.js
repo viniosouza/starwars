@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./styles/Navbar.scss";
-import Logo from "../Logo/LogoStar";
 class Navbar extends Component {
   render() {
     return (
@@ -11,10 +10,10 @@ class Navbar extends Component {
           <Link to="">
             <li>Home</li>
           </Link>
-          <Link to="/people">
+          <Link to="/people" onClick={() => window.reload()}>
             <li>Characteres</li>
           </Link>
-          <Link to="/planets">
+          <Link to="/planets" onClick={() => window.reload()}>
             <li>Planets</li>
           </Link>
         </ul>

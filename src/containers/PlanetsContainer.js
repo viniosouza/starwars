@@ -8,12 +8,18 @@ class PlanetsContainer extends Component {
     this.props.dispatch(PlanetsActions.planetsList());
   }
   render() {
-    return <Planets planets={this.props.planets} />;
+    return (
+      <Planets
+        planetsDetails={this.props.planetsDetails}
+        planets={this.props.planets}
+      />
+    );
   }
 }
 function mapStateToProps(state) {
   console.log(state);
   return {
+    planetsDetails: state.planets.data,
     planets: state.planets.results
   };
 }
