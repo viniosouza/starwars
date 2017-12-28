@@ -1,11 +1,21 @@
 import React, { PureComponent } from "react";
 import "./styles/Home.scss";
 import Demo from "../../components/Demo/Demo";
-import * as PlanetsActions from "../../actions/PlanetsActions";
-import * as PeopleActions from "../../actions/PeopleActions";
 
 class Home extends PureComponent {
   render() {
+    //     /                | /   \    |   _  \
+    //     |   (-----|  |----`/  ^  \   |  |_)  |
+    //      \   \    |  |    /  /_\  \  |      /
+    // .-----)   |   |  |   /  _____  \ |  |\  \-------.
+    // |________/    |__|  /__/     \__\| _| `.________|
+    //  ____    __    ____  ___     .______    ________.
+    //  \   \  /  \  /   / /   \    |   _  \  /        |
+    //   \   \/    \/   / /  ^  \   |  |_)  ||   (-----`
+    //    \            / /  /_\  \  |      /  \   \
+    //     \    /\    / /  _____  \ |  |\  \---)   |
+    //      \__/  \__/ /__/     \__\|__| `._______/
+
     return (
       <section className="Home">
         <Demo />

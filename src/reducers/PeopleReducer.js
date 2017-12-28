@@ -1,6 +1,5 @@
-import { PEOPLE, PEOPLE_FAILED } from "../constants/ActionTypes";
+import { PEOPLE } from "../constants/ActionTypes";
 const initialState = {
-  error: false,
   results: []
 };
 
@@ -11,11 +10,6 @@ export default function peopleReducer(state = initialState, action) {
         ...state,
         data: action.payload,
         results: action.payload.results
-      };
-    case PEOPLE_FAILED:
-      return {
-        ...state,
-        error: action.payload
       };
     default:
       return state;

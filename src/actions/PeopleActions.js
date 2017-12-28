@@ -1,6 +1,6 @@
 import * as Endpoint from "../constants/Endpoint";
 import axios from "axios";
-import { PEOPLE, PEOPLE_FAILED } from "../constants/ActionTypes";
+import { PEOPLE } from "../constants/ActionTypes";
 
 const config = {
   headers: {
@@ -10,18 +10,14 @@ const config = {
 };
 
 //People list
+const rand = Math.floor(Math.random() * 8 + 1);
+console.log(rand);
 export const peopleList = () => dispatch =>
   axios
-    .get(`${Endpoint.ENDPOINT_URL}/people`, config)
+    .get(`${Endpoint.ENDPOINT_URL}/people/?page=${rand}`, config)
     .then(response =>
       dispatch({
         type: PEOPLE,
         payload: response.data
-      })
-    )
-    .catch(error =>
-      dispatch({
-        type: PEOPLE_FAILED,
-        payload: error
       })
     );
