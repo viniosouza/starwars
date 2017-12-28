@@ -1,9 +1,22 @@
 .People {
-  padding: 10px 20px;
+  padding: 10px 60px;
   flex-direction: column;
-}
 
-h1 {
-  color: white;
-  padding: 10px;
+
+  &-title {
+    color: white;
+    padding: 10px;
+  }
+  &-Container {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  &-Load-Img {
+    width: 90px;
+    height: 90px;
+  }
 }
