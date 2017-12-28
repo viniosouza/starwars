@@ -11,7 +11,6 @@ const config = {
 
 //People list
 const rand = Math.floor(Math.random() * 8 + 1);
-console.log(rand);
 export const peopleList = () => dispatch =>
   axios
     .get(`${Endpoint.ENDPOINT_URL}/people/?page=${rand}`, config)

@@ -11,7 +11,6 @@ const config = {
 
 //Planets list
 const rand = Math.floor(Math.random() * 6 + 1);
-console.log(rand);
 export const planetsList = () => dispatch =>
   axios
     .get(`${Endpoint.ENDPOINT_URL}/planets/?page=${rand}`, config)

@@ -12,7 +12,6 @@ class PeopleContainer extends Component {
   }
 }
 function mapStateToProps(state) {
-  console.log(state);
   return {
     people: state.people.results
   };

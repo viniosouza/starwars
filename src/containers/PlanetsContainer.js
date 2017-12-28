@@ -17,7 +17,6 @@ class PlanetsContainer extends Component {
   }
 }
 function mapStateToProps(state) {
-  console.log(state);
   return {
     planetsDetails: state.planets.data,
     planets: state.planets.results
