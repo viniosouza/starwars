@@ -4,6 +4,7 @@ import "./styles/Planets-Profile.scss";
 function PlanetsProfile() {
   return (
     <div className="Planets-Profile">
+      <h1 className="Planets-Profile-Title">Planets Profile</h1>
       <img src="" alt="" />
       <div className="Planets-Profile-Container">
         <h1>Name</h1>
